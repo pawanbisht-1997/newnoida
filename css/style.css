@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+}
+:root{
+    --black : #000;
+    --white: #fff;
+    --orange : rgb(255, 172, 18);
+    --para :#fff4f4b8;
+    --background-trans:#00000087;
+    --heading:#242323;
+    --background: #eee;
+    --green:rgba(133,251,82,1);
+    --paratwo:#585858;
+}
+
+/* popins google font  */
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts_6/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts_6/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts_6/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts_6/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts_6/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts_6/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Merriweather-Black;
+    src: url(../fonts_6/Merriweather/Merriweather-Black.ttf);
+}
+
+/* global css */
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 70px;
+    font-family: Merriweather-Black;
+    color: var(--white);
+}
+h2{
+    font-size: 38px;
+    color: var(--heading);
+    font-family: Merriweather-Black;
+}
+h3 {
+    font-size: 28px;
+    color: var(--white);
+    font-family: Merriweather-Black;
+
+}
+h4 {
+    font-size: 22px;
+    padding: 10px 0;
+}
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.spce-btwn{
+    justify-content: space-between;
+}
+.glbl-btn{
+    border: 1px solid var(--white);
+    border-radius: 25px;
+    padding: 12px 34px;
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--white);
+}
+a{
+    text-decoration: none;
+}
+p {
+        font-size: 17px;
+        color: var(--paratwo);
+        line-height: 22px;
+}
+section{
+    padding: 120px 0px;
+}
+/* heading  */
+.heading{
+    text-align: center;
+    position: relative;
+    margin-bottom: 75px;
+}
+.heading::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 60px;
+        background-color: var(--orange);
+        position: absolute;
+        display: inline-block;
+        margin-top: 20px;
+}
+.heading p {
+    font-size: 19px;
+    color: #858585;
+}
+.heading h2{
+    margin-bottom: 9px;
+    color: var(--heading);
+}
+
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+header nav{
+    background-color: var(--background-trans);
+    padding: 16px 0;
+}
+header nav h3{
+    color: var(--white);
+}
+header nav .menu ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+header nav .menu ul li:nth-child(9){
+    border-right: 1px solid var(--white);
+    padding-right: 20px;
+}
+header nav .menu ul li a{
+    color: var(--white);
+}
+/* top_header */
+.top_header{
+    background-color: var(--black);
+    padding: 10px 0px;
+}
+.top_header .call_mail ul li{
+     display:inline-block;
+    padding: 0px 10px;
+}
+.top_header .call_mail ul li:first-child{
+    border-right: 1px solid var(--white);
+    padding-left: 0px;
+}
+.top_header .call_mail ul li:nth-child(2){
+    border-right: 1px solid var(--white);
+}
+.top_header .call_mail ul li a{
+    color: var(--white);
+    font-size: 14px;
+}
+
+/* banner css starts here  */
+.banner{
+    padding: 0px;
+}
+.banner .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding-top: 80px;
+}
+.banner .item .banner-contant{
+    width: 65%;
+    color: var(--white);
+    margin: 0px auto;
+}
+.banner .item h1 span{
+    color: var(--orange);
+}
+.banner .item .banner-contant p{
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--para);
+}
+.banner #banner {
+    position: relative;
+}
+.banner #banner button.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    font-size: 45px;
+    color: var(--white);
+}
+.banner #banner button.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    font-size: 45px;
+    color: var(--white);
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: unset !important;
+}
+
+/* three pannel */
+section.threee_pannel{
+    padding: 0px;
+}
+.threee_pannel .box{
+  
+    padding: 60px;
+    height: 250px;
+}
+.threee_pannel .box .glbl-btn{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* who we are  */
+.who_we_are{
+    padding: 70px 0px;
+}
+.who_we_are .box{
+    width: 32%;
+}
+.who_we_are .box img{
+    width: 100%;
+}
+
+
+/* fundraing */
+.fundrasing{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/video.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0px;
+}
+.fundrasing .left{
+    width: 40%;
+    height: 260px;
+}
+.fundrasing .right{
+    width: 45%;
+    margin-left: 55px;
+}
+.fundrasing .right .heading{
+    text-align: left;
+    margin-bottom: 35px;
+}
+.fundrasing .right  p{
+    color: var(--white);
+    line-height: 30px;
+}
+.fundrasing .right .glbl-btn{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* lates Causes */
+.Causes .box{
+    background-color: #eee;
+}
+.Causes .box .contant-part{
+    padding: 15px 15px 40px 15px;
+}
+.Causes .box .contant-part span {
+    color: var(--orange);
+}
+
+.Causes .box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.Causes .box  .card {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.progress {
+    background: rgba(0, 0, 0, 0.307);
+    padding: 3px 0;
+    border-radius: 5px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.Causes .box  .inner {
+    border-radius: 5px;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--orange);
+}
+.Causes .box .inner::after {
+    position: absolute;
+    top: -18px;
+    right: -11px;
+}
+.Causes .box .card .progress .in_1{width: 95%;}
+.Causes .box .card .progress .in_1::after{content: "95%";}
+.Causes .box .card .progress .in_2{width: 71%;}
+.Causes .box .card .progress .in_2::after{content: "71%";}
+.Causes .box .card .progress .in_3{width: 64%;}
+.Causes .box .card .progress .in_3::after{content: "64%";}
+
+/* counter css */
+.counter{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(../img/counter.webp);
+    background-size: cover;
+    background-position: center;
+}
+.counter h2{
+    font-size: 60px;
+    color: var(--white);
+    text-align: center;
+}
+.container h2 span{
+    font-family: Merriweather-Black;
+
+}
+.counter .card{
+    color: var(--white);
+}
+
+/* fundraising css  */
+
+.fundraing .left{
+    background-color: var(--orange);
+    padding: 80px;
+    width: 50%;
+    height: 400px;
+}
+.fundraing .left p{
+   color: var(--white);    
+   margin: 40px 0px;
+   line-height: 26px;
+}
+.fundraing .left .glbl-btn{
+    background-color: var(--white);
+    color: var(--heading);
+    margin-top: 0px;
+}
+.fundraing .right{
+    width: 50%;
+}
+.fundraing #fundrasing{
+    position: relative;
+}
+.fundraing #fundrasing .owl-dots {
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    transform: rotate(90deg);
+}
+.fundraing #fundrasing .item img{
+    height: 400px;
+    object-fit: cover;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--orange);
+}
+
+
+/* testimonial */
+.testimonial{
+   background-color: var(--background);
+   background-image:linear-gradient(rgba(238,238,238, 0.9),rgba(238,238,238, 0.9)),url(../img/testimonial.png);
+   background-size: contain;
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
+.testimonial .maintesti{
+  width: 96%;
+  margin-bottom: 30px;
+}
+.testimonial .box{
+    background-color: var(--white);
+    position: relative;
+    color: var(--para);
+    padding: 50px 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 6%);
+    
+}
+.testimonial .box h4{
+    color: var(--heading);
+    padding: 0px;
+    margin-bottom: 10px;
+}
+#triangle-down{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid var(--orange);
+    position: absolute;
+    top: 100%;
+  }
+  .testimonial .maintesti .img{
+    margin-right: 15px;
+  }
+.testimonial .maintesti .img img {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.testimonial .maintesti .contant h5{
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.testimonial .maintesti .contant span{
+       font-size: 16px;
+       color: var(--orange);
+}
+.testimonial .maintesti .contant p{
+   color: var(--para);
+}
+
+/* call to action */
+.cta{
+   background-color: var(--green);
+   padding: 30px 0px;
+}
+.cta .glbl-btn{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Footer */
+.footer{
+    background-color: var(--heading);
+}
+.footer ul{
+ margin-right: 25px;
+ width: 20%;
+}
+.footer h4{
+    font-size: 18px;
+}
+.footer ul:first-child{
+    width: 30%;
+    font-size: 16px;
+}
+.footer ul li{ 
+    color: var(--white);
+    margin-bottom: 14px;
+}
+.footer ul li .fa-solid{
+color: var(--orange);    
+padding-right: 8px;
+}
+
+.footer ul li p{
+    color: var(--white)
+}
+.footer ul li a{
+  color: var(--white);
+}
+.footer ul li a span{
+    color: var(--orange);
+    padding-right: 5px;
+    font-size: 15px;
+}
+.footer ul:nth-child(2){
+    margin-right: 50px;
+}
+.footer ul:nth-child(2) li{
+  border-bottom: 1px solid var(--paratwo);
+  padding-bottom: 6px;
+}
+.footer ul:nth-child(2) li p{
+    margin-bottom: 4px;
+}
+.footer ul:nth-child(2) li:last-child{
+    border: unset;
+}
+
+/* copyright */
+.copyright{
+    padding: 15px 0px;
+    background-color: var(--black);
+}
+.copyright ul li{
+    display: inline-block;
+    padding: 0px 12px;
+}
+.copyright a{
+    color: var(--paratwo);
+    text-decoration: none;
+}
